@@ -1,6 +1,6 @@
-p = int(input("Enter first number: "))
-q = int(input("Enter second number: "))
+p = int(input())
+q = int(input())
 
 result = p * q
 
-print("Multiplication of two numbers:", result)
+print(result)
