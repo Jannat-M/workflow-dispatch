@@ -1,5 +1,5 @@
-p = int(input())
-q = int(input())
+p = 3
+q = 4
 
 result = p * q
 
