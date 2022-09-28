@@ -11,11 +11,11 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
     inputs:
-      p:
-        description: 'Enter first number'     
+      numOne:
+        description: 'First number'     
         required: true
-      q:
-        description: 'Enter second number'
+      numTwo:
+        description: 'Second number'
         required: true  
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -36,4 +36,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: 
-          python multiplication.py ${{ github.event.inputs.p }} ${{ github.event.inputs.q }}
+          python multiplication.py ${{ github.event.inputs.numOne }} ${{ github.event.inputs.numTwo }}

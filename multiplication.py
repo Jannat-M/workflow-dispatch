@@ -1,5 +1,7 @@
-p = int(input("Enter first number: "))
-q = int(input("Enter second number: "))
+import sys
+
+p = int(sys.argv[1])
+q = int(sys.argv[2])
 
 result = p * q
 
